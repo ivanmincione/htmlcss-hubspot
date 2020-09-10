@@ -175,3 +175,104 @@ section.promotion-bar p a{
     color: white;
     font-weight: bold;
 }
+
+
+/* --------- inizio main centrale---------- */
+
+.central-container{
+    width: 100vw;
+    height: 700px;
+    position: relative;
+    background-image: url(https://www.gate39media.com/wp-content/uploads/2019/09/HubSpot-Post-Background.png);
+    background-size: cover;
+    border-bottom: 2px solid orange;
+
+}
+.box-central-container{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top:20%;
+    left:20%;
+    background-color:inherit;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+.box-central-container h1{
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #33475B;
+    margin: 20px;
+
+}
+
+.box-central-container p{
+    color: #33475B;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.box-central-container a{
+    text-decoration: none;
+    background: orange;
+    color:black;
+    border: 2px solid orange;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin: 30px 20px;
+    padding: 10px;
+    display:block;
+    font-weight: bold;
+}
+
+.box-central-container a:hover{
+    filter:blur(0.2);
+    color:white;
+}
+
+.central-container span{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #33475B;
+    margin-left: 20px;
+}
+
+/* ------fine main 1 ----------- */
+
+/* -----inizio main 2-------- */
+
+
+.container-stack{
+    width: 100vw;
+    height: 1000px;
+    position: relative;
+
+
+}
+
+.container-stack .box-info{
+    width: 300px;
+    background-color: inherit;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+}
+
+.box-info h2{
+    font-size: 35px;
+
+    font-weight: bold;
+    color: #33475B;
+    margin: 20px;
+}
+
+.box-info p{
+    color: #33475B;
+    font-size: 15px;
+    margin: 20px;
+}
