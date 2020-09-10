@@ -185,7 +185,7 @@ section.promotion-bar p a{
     position: relative;
     background-image: url(https://www.gate39media.com/wp-content/uploads/2019/09/HubSpot-Post-Background.png);
     background-size: cover;
-    border-bottom: 2px solid orange;
+    border-bottom: 3px solid orange;
 
 }
 .box-central-container{
@@ -248,18 +248,23 @@ section.promotion-bar p a{
 
 .container-stack{
     width: 100vw;
-    height: 1000px;
+    height: 1200px;
     position: relative;
+    background-color: lightcyan;
 
 
 }
-
-.container-stack .box-info{
+.row{
+    position:relative;
+    top:20%;
+    left:20%;
+    margin: 20px;
+}
+.box-info{
     width: 300px;
-    background-color: inherit;
-    position: absolute;
-    top: 20%;
-    left: 20%;
+    display: inline-block;
+    position: relative;
+
 
 }
 
@@ -275,4 +280,104 @@ section.promotion-bar p a{
     color: #33475B;
     font-size: 15px;
     margin: 20px;
+}
+
+
+.box{
+    display: inline-block;
+    width: 300px;
+    height: 450px;
+    position: relative;
+    background: white;
+
+}
+
+.box h4{
+    font-size: 25px;
+    font-weight: bold;
+    color: #33475B;
+    margin: 20px;
+}
+
+.box h6{
+    font-size: 12px;
+    font-weight: bold;
+    color: #33475B;
+    margin: 20px;
+}
+
+.box p{
+    color: #33475B;
+    font-size: 15px;
+    margin: 20px;
+}
+
+.box hr{
+    border: 0.5px solid grey;
+
+    margin: 20px;
+}
+
+.box ul li{
+    list-style-type: none;
+    margin: 20px;
+    font-size: 15px;
+
+}
+
+.style-btt-link{
+    text-decoration: none;
+    background: orange;
+    color:black;
+    border: 2px solid orange;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin: 30px 20px;
+    padding: 10px;
+    display:block;
+    font-weight: bold;
+}
+
+.style-btt-link:hover{
+    filter:blur(0.2);
+    color:white;
+}
+
+.box span{
+    position: absolute;
+    top:0%;
+    right:0%;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
+/* --------- sezione community-------- */
+
+.community{
+    width: 100%;
+    height: 800px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,101,1) 52%, rgba(0,212,255,1) 100%);
+}
+
+.community h2{
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+}
+
+.community p{
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
 }
