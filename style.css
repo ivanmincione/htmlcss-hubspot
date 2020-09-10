@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-top{
+    background-color: ghostwhite;
+    height: 100px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.nav-top-left{
+    float: left;
+    padding: 30px;
+}
+
+.nav-top-left ul li{
+    list-style-type: none;
+}
+
+.nav-top-left li span{
+    padding-right: 10px;
+}
+
+.choose-language{
+    border-right: 1px solid black;
+    color: #33475B;
+}
+
+.choose-language::after{
+    content:"▾";
+    margin-left: 5px;
+}
+
+.contact-sales{
+    padding-left: 10px;
+    color: #33475B;
+
+}
+.choose-language, .contact-sales:hover{
+    cursor: pointer;
+}
+
+.nav-top-right{
+    float:right;
+    padding: 30px;
+}
+
+.nav-top-right ul li{
+    list-style-type: none;
+}
+
+.nav-top-right li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.login{
+    color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    font-size: 15px;
+    margin: 10px;
+    color: #33475B;
+}
+
+.login:hover{
+    background-color: orange;
+    color: white;
+}
+
+.search{
+    margin: 10px;
+}
+
+.get-free{
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    padding-left:10px;
+    border: 1px solid orange;
+    margin:10px;
+}
+
+.get-free:hover{
+    filter:blur(0.4px);
+    color: white;
+
+
+}
+
+.nav-top:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.nav-bottom{
+    background-color:aliceblue;
+    height: 100px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+
+}
+
+.nav-bottom ul{
+    text-align: right;
+    padding-right: 50px;
+}
+
+.nav-bottom li{
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 10px;
+}
+
+.nav-bottom a{
+    text-decoration: none;
+    color: #33475B;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-bottom a::after{
+    content:"▾";
+    margin-left: 5px;
+}
+
+.imglogo img{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+
+
+}
+
+.menu{
+    margin-left: 500px
+}
+.imglogo, .menu{
+    float: left;
+}
+
+.nav-bottom:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+section.promotion-bar{
+    background-color: #425b76;
+
+}
+
+section.promotion-bar p{
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+section.promotion-bar p a{
+    color: white;
+    font-weight: bold;
+}
