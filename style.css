@@ -32,6 +32,7 @@ body{
 .choose-language{
     border-right: 1px solid black;
     color: #33475B;
+    font-weight: bold;
 }
 
 .choose-language::after{
@@ -42,7 +43,7 @@ body{
 .contact-sales{
     padding-left: 10px;
     color: #33475B;
-
+    font-weight: bold;
 }
 .choose-language, .contact-sales:hover{
     cursor: pointer;
@@ -294,11 +295,20 @@ section.promotion-bar p a{
     margin: 20px;
 }
 
+.box:hover{
+    border: 2px groove orange;
+    filter: blur(0.2px);
+}
+
 .box h4{
     font-size: 25px;
     font-weight: bold;
     color: #33475B;
     margin: 20px;
+}
+
+.box h4::before{
+    content:"♣";
 }
 
 .box h6{
@@ -323,6 +333,10 @@ section.promotion-bar p a{
     list-style-type: none;
     margin: 20px;
     font-size: 15px;
+}
+
+.box li::before{
+    content:"✠";
 }
 
 .style-btt-link{
@@ -671,6 +685,11 @@ contant-footer{
     text-decoration: none;
     padding: 40px;
     font-size: 30px;
+}
+
+.contant-footer li a i:hover{
+    color: blue;
+    cursor: pointer;
 }
 
 .footer-bottom::after{
