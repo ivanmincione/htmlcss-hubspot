@@ -13,10 +13,13 @@ body{
     height: 100px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    position: relative;
 }
 
 .nav-top-left{
-    float: left;
+    position: absolute;
+    top:0%;
+    left:0%;
     padding: 30px;
 }
 
@@ -48,7 +51,9 @@ body{
 }
 
 .nav-top-right{
-    float:right;
+    position: absolute;
+    top: 0%;
+    right: 0%;
     padding: 30px;
 }
 
@@ -104,12 +109,41 @@ body{
     clear: both;
 }
 
+/* ------- fine nav top -------- */
+
+/* ----------inizio nav bottom------- */
 
 .nav-bottom{
     background-color:aliceblue;
     height: 100px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    position: relative;
+
+}
+
+.logo-nav-bottom{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    margin-left: 50px;
+
+}
+
+.nav-bottom .logo-nav-bottom img{
+    width: 100px;
+    height: 50px;
+
+}
+
+.menu{
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    margin-right: 100px;
 
 }
 
@@ -137,27 +171,10 @@ body{
     margin-left: 5px;
 }
 
-.imglogo img{
-    width: 100px;
-    height: 50px;
-    margin: 20px;
 
+/* ------fine nav bottom------ */
 
-}
-
-.menu{
-    margin-left: 500px
-}
-.imglogo, .menu{
-    float: left;
-}
-
-.nav-bottom:after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
+/* ----inizio sezione pubblicitaria-------- */
 
 section.promotion-bar{
     background-color: #425b76;
@@ -176,16 +193,16 @@ section.promotion-bar p a{
     font-weight: bold;
 }
 
+/* --------fine sezione pubblicitaria-------- */
 
-/* --------- inizio main centrale---------- */
+/* --------- inizio primo blocco---------- */
 
 .central-container{
-    width: 100vw;
     height: 700px;
     position: relative;
     background-image: url(https://www.gate39media.com/wp-content/uploads/2019/09/HubSpot-Post-Background.png);
     background-size: cover;
-    border-bottom: 3px solid orange;
+    border: 3px solid orange;
 
 }
 .box-central-container{
@@ -195,7 +212,6 @@ section.promotion-bar p a{
     top:20%;
     left:20%;
     background-color:inherit;
-    border: 1px solid black;
     padding: 10px;
 
 }
@@ -235,42 +251,43 @@ section.promotion-bar p a{
 }
 
 .central-container span{
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 1px;
     color: #33475B;
     margin-left: 20px;
 }
 
-/* ------fine main 1 ----------- */
+/* ------fine primo blocco ----------- */
 
-/* -----inizio main 2-------- */
+
+/* -----inizio secondo blocco-------- */
 
 
 .container-stack{
-    width: 100vw;
-    height: 1200px;
+    height: 1000px;
     position: relative;
     background-color: lightcyan;
+}
 
-
+.container-stack .content-box{
+    position: absolute;
+    top:20%;
+    left:20%;
+    transform:translateY(-20%);
 }
 .row{
     position:relative;
-    top:20%;
-    left:20%;
-    margin: 20px;
+    margin: 10px;
+
 }
 .box-info{
     width: 300px;
     display: inline-block;
     position: relative;
-
-
 }
 
 .box-info h2{
     font-size: 35px;
-
     font-weight: bold;
     color: #33475B;
     margin: 20px;
@@ -281,7 +298,6 @@ section.promotion-bar p a{
     font-size: 15px;
     margin: 20px;
 }
-
 
 .box{
     display: inline-block;
@@ -355,29 +371,41 @@ section.promotion-bar p a{
     border-bottom-right-radius: 50%;
 }
 
+/* -----fine secondo blocco----- */
 
-/* --------- sezione community-------- */
+
+/* --------- inizio terzo blocco-------- */
 
 .community{
-    width: 100%;
+    /* width: 100%; */
     height: 800px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,101,1) 52%, rgba(0,212,255,1) 100%);
+    position: relative;
 }
 
-.community h2{
+.title-community{
+    position: absolute;
+    top:0%;
+    left:50%;
+    transform: translateX(-50%);
+    margin: 20px;
+
+}
+
+.community .title-community h2{
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
     color: white;
     text-align: center;
-    padding: 30px;
-    margin: 30px;
+    padding: 20px;
+
 }
 
 .community p{
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     margin: 10px;
 }
