@@ -7,22 +7,18 @@
 body{
     font-family: 'Arial', sans-serif;
 }
-
+/* nav alto diviso in sinistra e destra */
 .nav-top{
     background-color: ghostwhite;
     height: 100px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    /* position: relative; */
 }
 
 .nav-top-left{
-    /* position: absolute;
-    top:0%;
-    left:0%; */
-    padding: 30px;
     display: inline-block;
     float: left;
+    padding: 30px;
 }
 
 .nav-top-left ul li{
@@ -53,12 +49,9 @@ body{
 }
 
 .nav-top-right{
-    /* position: absolute;
-    top: 0%;
-    right: 0%; */
-    padding: 30px;
     display: inline-block;
     float: right;
+    padding: 30px;
 }
 
 .nav-top-right ul li{
@@ -103,8 +96,6 @@ body{
 .get-free:hover{
     filter:blur(0.4px);
     color: white;
-
-
 }
 
 .nav-top:after{
@@ -113,7 +104,7 @@ body{
     clear: both;
 }
 
-/* ------- fine nav top -------- */
+/* ------- fine nav alto -------- */
 
 /* ----------inizio nav bottom------- */
 
@@ -122,37 +113,24 @@ body{
     height: 100px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
-    /* position: relative; */
-
 }
 
 .logo-nav-bottom{
-    /* position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translateY(-50%); */
     margin-left: 50px;
     display: inline-block;
     float: left;
-
 }
 
 .nav-bottom .logo-nav-bottom img{
     width: 100px;
     height: 50px;
     margin: 20px;
-
 }
 
 .menu{
-    /* position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translateY(-50%); */
     margin-right: 100px;
     display: inline-block;
     float: right;
-
 }
 
 .nav-bottom ul{
@@ -179,14 +157,12 @@ body{
     margin-left: 5px;
 }
 
-
 /* ------fine nav bottom------ */
 
 /* ----inizio sezione pubblicitaria-------- */
 
 section.promotion-bar{
     background-color: #425b76;
-
 }
 
 section.promotion-bar p{
@@ -206,22 +182,18 @@ section.promotion-bar p a{
 /* --------- inizio primo blocco---------- */
 
 .central-container{
-    height: 700px;
-    position: relative;
     background-image: url(https://www.gate39media.com/wp-content/uploads/2019/09/HubSpot-Post-Background.png);
     background-size: cover;
     border: 3px solid orange;
-
+    padding-left: 200px;
 }
 .box-central-container{
     width: 400px;
-    height: auto;
-    position: absolute;
-    top:20%;
-    left:20%;
     background-color:inherit;
     padding: 10px;
-
+    display: inline-block;
+    float: left;
+    margin: 20px;
 }
 
 .box-central-container h1{
@@ -230,7 +202,6 @@ section.promotion-bar p a{
     font-weight: bold;
     color: #33475B;
     margin: 20px;
-
 }
 
 .box-central-container p{
@@ -265,43 +236,39 @@ section.promotion-bar p a{
     margin-left: 20px;
 }
 
+.central-container::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
 /* ------fine primo blocco ----------- */
 
 
 /* -----inizio secondo blocco-------- */
 
-
 .container-stack{
-    /* height: 1000px; */
-    /* position: relative; */
     background-color: lightcyan;
+    padding-top: 100px;
+    padding-left: 200px;
 }
 
-/* .container-stack .content-box{
-    position: absolute;
-    top:20%;
-    left:20%;
-    transform:translateY(-20%); */
-}
 .row{
-    /* position:relative; */
     display:inline-block;
-    float:  right;
+    float: left;
 }
 
 .row::after{
     content:"";
     display: table;
     clear: both;
-
 }
+
 .box-info{
     width: 300px;
     display: inline-block;
     float: left;
     margin: 20px;
-
-    /* position: relative; */
 }
 
 .box-info h2{
@@ -322,10 +289,9 @@ section.promotion-bar p a{
     float: left;
     width: 300px;
     height: 450px;
-    /* position: relative; */
+    position: relative;
     background: white;
     margin: 20px;
-
 }
 
 .box h4{
@@ -350,7 +316,6 @@ section.promotion-bar p a{
 
 .box hr{
     border: 0.5px solid grey;
-
     margin: 20px;
 }
 
@@ -358,7 +323,6 @@ section.promotion-bar p a{
     list-style-type: none;
     margin: 20px;
     font-size: 15px;
-
 }
 
 .style-btt-link{
@@ -396,26 +360,16 @@ section.promotion-bar p a{
     display: table;
     clear: both;
 }
+
 /* -----fine secondo blocco----- */
-
-
-
-
-
 
 
 /* --------- inizio terzo blocco-------- */
 
 .community{
-    /* width: 100%; */
-    height: 1000px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,101,1) 52%, rgba(0,212,255,1) 100%);
-    /* position: relative; */
-
 }
-
-
 
 .community .title-community h2{
     font-size: 35px;
@@ -425,9 +379,7 @@ section.promotion-bar p a{
     text-align: center;
     padding: 20px;
     margin: 0 200px;
-
 }
-
 
 .community .title-community p{
     color: white;
@@ -474,7 +426,6 @@ padding-left: 100px;
     content: "";
     display: table;
     clear: both;
-
 }
 
 /*---------------- fine terzo blocco----------- */
@@ -483,9 +434,7 @@ padding-left: 100px;
 
 .customers{
     margin: 20px;
-    /* height: 1000px; */
 }
-
 
 .customer-box{
     display: inline-block;
@@ -513,7 +462,6 @@ padding-left: 100px;
     font-size: 25px;
 }
 
-
 .customers .customer-img{
     display: inline-block;
     float: right;
@@ -533,8 +481,6 @@ padding-left: 100px;
         clear: both;
 }
 /* ----fine quarto blocco */
-
-
 
 /* -------inizio quinto blocco--- */
 
@@ -562,7 +508,6 @@ padding-left: 100px;
     padding-left: 20px;
 }
 
-
 .customer-bottom-img{
     display: inline-block;
     float: right;
@@ -579,14 +524,157 @@ padding-left: 100px;
         content: "";
         display: table;
         clear: both;
-
+}
 /* fine quinto blocco  */
-
 
 /* ------inizio footer------ */
 
-.container-footer{
+contant-footer{
     background-color: #33475b;
-    display: block;
-    height: 800px;
+    width: 100%;
+}
+
+
+.layout-footer{
+    background-color: #33475b;
+    width: 100%;
+}
+
+/*  lista dei link affiancati */
+.nav-column{
+    padding: 40px;
+}
+
+.title-column{
+    display: inline-block;
+    float: left;
+    margin: 20px;
+}
+
+.title-column span{
+    color: white;
+    font-size: 20px;
+    padding: 10px
+}
+
+.column-list a{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.nav-column li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.nav-column::after{
+        content: "";
+        display: table;
+        clear: both;
+}
+
+/*  inizio link support */
+
+.link-support{
+}
+
+.link-support a{
+    background-color: white;
+    text-decoration: none;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    border-radius: 10px;
+    color: #33475b;
+}
+
+.link-support::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* -----fine link support */
+
+
+/* ----inizio list icon------ */
+
+.list-icon{
+    float: left;
+    display: inline-block;
+}
+
+.list-icon li{
+    list-style-type: none;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    margin:5px;
+}
+
+.list-icon::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* ----fine list icon------ */
+
+/* -----inizio scelta lingua------*/
+.languages-link{
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: 2px solid azure;
+    padding-bottom: 20px;
+}
+
+.languages-link li{
+    display: inline-block;
+}
+
+.languages-link li a{
+    text-transform: uppercase;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;
+    align-items: center;
+}
+
+/* -----fine list column -------*/
+
+/* ------- piè di pagina----- */
+.footer-bottom-left{
+    float: left;
+    align-items: center;
+}
+
+.footer-bottom-left img{
+    width: 200px;
+    height: 150px;
+}
+
+.footer-bottom-left p{
+    color: white;
+    font-size: 15px;
+
+}
+.footer-bottom-right{
+    float: right;
+    margin: 60px 40px;
+    align-items: center;
+}
+
+.footer-bottom-right a{
+    color: white;
+    text-decoration: none;
+    padding: 40px;
+    font-size: 30px;
+}
+
+.footer-bottom::after{
+    content: "";
+    display: table;
+    clear: both;
 }
