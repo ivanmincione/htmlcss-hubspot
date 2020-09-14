@@ -13,6 +13,7 @@ body{
     height: 100px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    padding: 0 200px;
 }
 
 .nav-top-left{
@@ -25,25 +26,58 @@ body{
     list-style-type: none;
 }
 
-.nav-top-left li span{
+.nav-top-left{
     padding-right: 10px;
 }
 
 .choose-language{
-    border-right: 1px solid black;
+    border-right: 1px solid#33475B ;
     color: #33475B;
     font-weight: bold;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+    padding-right: 10px;
 }
 
-.choose-language::after{
-    content:"▾";
-    margin-left: 5px;
+.choose-langauge span{
+    margin: 0 10px;
+}
+
+.drop-link-language{
+    display: none;
+    position: absolute;
+    background: rgb(116,242,236);
+    background: linear-gradient(90deg, rgba(116,242,236,1) 0%, rgba(255,255,255,1) 52%, rgba(106,228,252,0.12958686892725846) 100%);
+    padding: 10px;
+    min-width: 100px;
+    z-index: 1;
+    color: #33475B;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.drop-link-language a{
+    display: block;
+    text-decoration: none;
+    color: #33475B;
+}
+
+
+.choose-language:hover{
+    cursor: pointer;
+}
+
+.choose-language:hover .drop-link-language{
+    display: block;
 }
 
 .contact-sales{
     padding-left: 10px;
     color: #33475B;
     font-weight: bold;
+    float: left;
 }
 .choose-language, .contact-sales:hover{
     cursor: pointer;
@@ -114,10 +148,11 @@ body{
     height: 100px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    padding: 0 200px
 }
 
 .logo-nav-bottom{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     display: inline-block;
     float: left;
 }
@@ -129,7 +164,7 @@ body{
 }
 
 .menu{
-    margin-right: 100px;
+    /* margin-right: 100px; */
     display: inline-block;
     float: right;
 }
@@ -395,6 +430,7 @@ section.promotion-bar p a{
     margin: 0 200px;
 }
 
+
 .community .title-community p{
     color: white;
     text-align: center;
@@ -429,6 +465,11 @@ padding-left: 100px;
 .data-community .data-box h2{
     font-size: 50px;
     margin: 10px;
+}
+
+.data-community .data-box h2 span{
+    font-size: 20px;
+    vertical-align: middle;
 }
 
 .data-community .data-box p{
@@ -584,11 +625,61 @@ contant-footer{
     padding: 10px;
 }
 
+.contant-footer a:hover{
+    color: cornflowerblue;
+}
+
 .nav-column::after{
         content: "";
         display: table;
         clear: both;
 }
+
+/* inizio lista a tendina */
+.drop-list{
+    position: relative;
+    display: inline-block;
+}
+
+
+.drop-list p{
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+.drop-list i{
+    color: white;
+    padding-left: 5px
+
+}
+
+.drop-link a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.drop-link{
+    display: none;
+    position: relative;
+/* non posizione assoluta altrimenti si sovrappone alla parte sottostante */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.drop-list:hover{
+    cursor: pointer;
+}
+
+.drop-list:hover .drop-link{
+    display: block;
+
+}
+
+/* -----fine lista a tendina----- */
 
 /*  inizio link support */
 
