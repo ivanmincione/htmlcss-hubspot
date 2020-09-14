@@ -810,6 +810,16 @@ contant-footer{
     margin-bottom: 20px;
 }
 
+.chat-fixed img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,0%);
+
+}
+
 .chat-fixed p{
     max-width: 250px;
     max-height: 250px;
@@ -823,7 +833,7 @@ contant-footer{
     font-weight: bold;
     background: rgb(27,173,182);
     background: linear-gradient(90deg, rgba(27,173,182,1) 29%, rgba(11,77,90,0.12958686892725846) 100%);
-    
+
 }
 
 .container-chat .chatbtt{
