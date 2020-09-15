@@ -440,6 +440,11 @@ section.promotion-bar p a{
 
 /* ------ blocchi community */
 
+.data-community{
+    padding: 20px;
+}
+
+
 .data-community .data-box{
     width: 25%;
     color: white;
@@ -568,26 +573,16 @@ section.promotion-bar p a{
 
 /* ------inizio footer------ */
 
-contant-footer{
+.contant-footer{
     background-color: #33475b;
-    width: 100%;
+    /* width: 100%; */
 }
 
-
-.layout-footer{
-    background-color: #33475b;
-    width: 100%;
-}
-
-/*  lista dei link affiancati */
 .nav-column{
-    margin-left:80px;
     padding-top: 40px;
-    padding-left: 80px;
 }
 
 .title-column{
-    display: inline-block;
     float: left;
     margin: 20px;
 }
